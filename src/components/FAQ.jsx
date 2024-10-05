@@ -1,5 +1,3 @@
-import React from "react";
-// import Plus from '../assets/'
 import { useState } from "react";
 import Open from "../assets/open.svg";
 import Close from "../assets/close.svg";
