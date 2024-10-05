@@ -1,0 +1,142 @@
+@import url("https:/./assets/fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+@font-face {
+    font-family: 'Everett';
+    src: url('./assets/fonts/Everett-Light.woff2') format('woff2'),
+        url('./assets/fonts/Everett-Light.woff') format('woff'),
+        url('./assets/fonts/Everett-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Everett';
+    src: url('./assets/fonts/Everett-Regular.woff2') format('woff2'),
+        url('./assets/fonts/Everett-Regular.woff') format('woff'),
+        url('./assets/fonts/Everett-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Everett';
+    src: url('./assets/fonts/Everett-Medium.woff2') format('woff2'),
+        url('./assets/fonts/Everett-Medium.woff') format('woff'),
+        url('./assets/fonts/Everett-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+
+:root {
+    --background: 0 0% 100%;
+    --background-secondary: 203, 31%, 95%;
+    --background-gradient: linear-gradient(64.81% 56.46% at 50% 0%, rgba(77, 162, 255, .16) 7.29%, rgba(181, 73, 234, .16) 31.77%, rgba(255, 51, 112, .16) 48.96%, rgba(255, 108, 61, .16) 63.54%, hsla(0, 0%, 100%, .16)), #f6f6f7;
+    --alert-gradient: linear-gradient(90deg, rgba(181, 73, 234, .24), rgba(77, 162, 255, .24));
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+    --quaternary: 206, 17%, 63%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 240 7% 97%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent-secondary: 204, 100%, 88%;
+    --accent-secondary-40: 204, 100%, 88%, 0.4;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --negative: 353, 64%, 46%;
+    --negative-disabled: 353, 64%, 45%, 0.56;
+    --negative-secondary: 351, 93%, 95%;
+    --border: 214.3 31.8% 91.4%;
+    --border-secondary: 203, 31%, 90%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --radius: 0.5rem;
+    --blue: 211 100% 65%;
+    --baby-blue: 203 100% 96%;
+    --deep-navy: 212 100% 10%;
+    --grey: 207 24% 74%;
+    --dark-grey: 211 16% 35%;
+    --light-blue: 211 100% 88%;
+    --off-black: 211 81% 6%;
+    --off-white: 240 7% 97%;
+    --grey-45: 204 10% 90%;
+    --success: 163 68% 51%;
+    --blue-transparent-light: 204, 100%, 88%, 0.32;
+    --blue-transparent-dark: 211, 100%, 65%, 0.32;
+    --content-secondary: 211, 16%, 34%;
+    --background-overlay: 212, 53%, 14%, 0.56;
+    --content-accent: 211, 66%, 39%;
+    --accent-blue1: #030f1c;
+    --accent-blue2: #011829;
+    --accent-blue3: #1988ff;
+    --accent-blue4: #4da2ff;
+    --accent-blue4_op16: #4da2ff16;
+    --accent-blue5: #c0e6ff;
+    --accent-pink1: #ff3370;
+    --accent-pink2: #fee1f7;
+    --accent-purple: #a744dd;
+    --accent-orange: #ff6c3d;
+    --accent-green: #27ce7e;
+    --accent-green_op24: #27ce8124;
+    --accent-green_op16: #27ce8116;
+    --accent-red: #ec2e50;
+    --accent-red_op24: #ec2e5024;
+    --accent-red_op16: #ec2e5024;
+    --accent-red2: #c11b39;
+    --accent-yellow: #ffb13d;
+    --accent-yellow_op24: #ffb13d24;
+    --accent-yellow_op16: #ffb13d16;
+    --greyscale-black: #030f1c;
+    --greyscale-black_op40: #030f1c40;
+    --greyscale-black_op8: #030f1c08;
+    --greyscale-grey1: #91a3b1;
+    --greyscale-grey2: #abbdcc;
+    --greyscale-grey2_op40: #abbdcc40;
+    --greyscale-grey2_op24: #abbdcc24;
+    --greyscale-grey2_op16: #abbdcc16;
+    --greyscale-grey2_op8: #abbdcc08;
+    --greyscale-grey3: #f5f8fa;
+    --greyscale-grey2_dark: #485563;
+    --greyscale-grey3_button: #02192a;
+    --greyscale-white: #f7f7f8;
+    --greyscale-white_op72: #f7f7f872;
+    --greyscale-white_op40: #f7f7f840;
+    --greyscale-white_op24: #f7f7f824;
+    --greyscale-white_op16: #f7f7f816;
+    --greyscale-white_op8: #f7f7f808;
+    --greyscale-white_op4: #f7f7f804;
+    --brand-sea: #4da2ff;
+    --brand-ocean: #011829;
+    --brand-deepOcean: #030f1c;
+    --brand-cloud: #fff;
+    --brand-aqua: #c0e6ff;
+    --brand-warmPink: #ff3370;
+    --brand-softPink: #fee1f7;
+    --brand-tenderPurple: #a744dd;
+    --brand-hotOrange: #ff6c3d;
+    --brand-concrete700: #91a3b1;
+    --brand-concrete500: #abbdcc;
+    --brand-concrete100: #f5f8fa;
+    --brand-concrete50: #f7f7f8;
+}
