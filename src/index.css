@@ -38,6 +38,22 @@ body {
 }
 
 
+@font-face {
+    font-family: 'Everett Mono';
+    src: url('./assets/fonts/EverettMono-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Everett Mono';
+    src: url('./assets/fonts/EverettMono-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 
 
@@ -139,4 +155,14 @@ body {
     --brand-concrete500: #abbdcc;
     --brand-concrete100: #f5f8fa;
     --brand-concrete50: #f7f7f8;
+}
+
+
+
+
+
+@layer base {
+    :root {
+        --radius: 0.5rem;
+    }
 }

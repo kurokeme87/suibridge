@@ -66,7 +66,10 @@ const FAQ = () => {
     setActiveIndex(activeIndex === index ? null : index);
   };
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-between gap-6 md:px-[160px] py-10">
+    <div
+      name="faq"
+      className="flex  flex-col lg:flex-row items-center justify-between gap-6 md:px-[160px] py-10"
+    >
       <div className="flex-1 w-full flex items-center justify-center self-start pt-6">
         <div className="lg:min-w-[470px] max-w-[470px] flex items-center text-center lg:text-left">
           <h1 className="text-3xl md:text-5xl leading-tight text-content-primary">
